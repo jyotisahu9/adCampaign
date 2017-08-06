@@ -1,0 +1,24 @@
+Build steps:
+
+1. Download project
+2. Import project using existing maven project
+3. Build project
+4. Add campaign url : http://localhost:8080/addAdcampaign
+    Post method, input as json object
+   List all campaign : http://localhost:8080/listAllAdcampaigns
+    Get method
+   Fetch ad campaign : http://localhost:8080/fetchAdcampaign/{partnerId}
+    Get method
+   Update ad campaign : http://localhost:8080/updateAdcampaigns
+    Post method, input as json object
+   Serach ad campaign : http://localhost:8080/searchAdcampaign
+    Post method, input as json object
+    
+ Sample json object for request:
+ {
+"partnerId": "unique_string_representing_partner",
+"duration": "100",
+"adContent": "string_of_content_to_display_as_ad",
+"adTitle": "string_of_title_to_display",
+"adStatus": "ACTIVE"
+}
